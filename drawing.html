@@ -2,16 +2,15 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-    img{
-        max-width: 400px;
-        height: 440px;
-        margin-bottom: 16px; /* 1rem */
-        object-fit: cover;
-        border: 2px solid black;
-        margin-top: 16px;
-        margin-left: 30px;
-        margin-right: 20px;
-    }
+    img {
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 400 / 440;
+    object-fit: cover;
+    border: 2px solid black;
+    margin: 16px 20px 16px 30px; /* shorthand for top, right, bottom, left */
+    display: block;
+}
     .text{
         vertical-align: center;
         text-align: center;

@@ -1,0 +1,186 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #FADADD; 
+      color: #1E1E1E;
+      line-height: 24px;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    /* Navbar */
+    nav {
+      background-color: #943232; 
+      padding: 16px 0; 
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 32px; 
+      font-weight: bold;
+    }
+    nav ul li a {
+      color: #FADADD;
+      font-size: 16px;
+    }
+    nav ul li a:hover {
+      color: #110901;
+    }
+    /*Container */
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 16px;
+    }
+    section {
+      margin-bottom: 64px;
+    }
+    h2 {
+      font-size: 32px; 
+      border-bottom: 3px solid #800000; 
+      padding-bottom: 6px; 
+      margin-bottom: 16px;
+      color: #800000;
+      margin-top: 40px;
+    }
+    /* Home */
+    #home {
+      text-align: center;
+    }
+    #home img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 3px solid #040000;
+      margin-bottom: 16px; 
+      object-fit: cover;
+    }
+    #home h1 {
+      font-size: 35px; 
+      color: #800000;
+    }
+    #home p {
+      max-width: 600px;
+      margin: 0 auto;
+      color: #4B4B4B;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    /* About */
+    #about p {
+      color: #4B4B4B;
+      font-size: 16px;
+    }
+    /* Skills */
+    .skill {
+      margin-bottom: 19px; 
+    }
+    .skill-name {
+      font-weight: 600;
+      margin-bottom: 5px; 
+      color: #4B1D1D;
+      font-size: 16px;
+    }
+    .progress-bar {
+      background: #FAF0E6;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 22px;
+    }
+    .progress {
+      height: 100%;
+      text-align: right;
+      padding-right: 12px;
+      line-height: 22px;
+      color: white;
+      font-weight: 600;
+      border-radius: 20px 0 0 20px;
+      font-size: 14px;
+    }
+    .progress-html    { background: #d32828; width: 95%; }
+    .progress-css     { background: #B03060; width: 50%; }
+    .progress-java      { background: #A52A2A; width: 75%; }
+    .progress-c         { background: #DC143C; width: 80%; }
+    .progress-cpp     { background: #8b3b3b; width: 90%; }
+
+    /* Lists */
+    ul {
+      padding-left: 24px; 
+      color: #1E1E1E;
+      font-size: 16px;
+    }
+    ul li {
+      margin-bottom: 8px; 
+    }
+
+    /* Contact */
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 5px; 
+      font-weight: 600;
+      color: #4B1D1D;
+      font-size: 16px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px; 
+      margin-bottom: 16px; 
+      border-radius: 5px;
+      border: 1px solid #E6B8B8;
+      font-size: 16px;
+      background: #FFF;
+      color: #1E1E1E;
+      font-family: inherit;
+    }
+
+    form input:focus,
+    form textarea:focus {
+      outline: 2px solid #800000;
+      background-color: #fff4f4;
+    }
+
+    form button {
+      background-color: #800000;
+      color: white;
+      border: none;
+      padding: 12px 24px; 
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 30px;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #A52A2A;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 16px; 
+        padding: 16px 0;
+      }
+
+      h2 {
+        font-size: 24px; 
+      }
+
+      #home h1 {
+        font-size: 29px; 
+      }
+    }

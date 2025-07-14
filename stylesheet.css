@@ -169,12 +169,16 @@
     }
 
     /* Responsive */
-    @media (max-width: 600px) {
-      nav ul {
-        flex-direction: column;
-        gap: 16px; 
-        padding: 16px 0;
-      }
+   @media (max-width: 600px) {
+  nav ul {
+    gap: 16px; /* Reduce gap for smaller screens */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Allow horizontal scrolling */
+  }
+
+  nav {
+    overflow-x: auto;
+  }
 
       h2 {
         font-size: 24px; 
